@@ -1,0 +1,58 @@
+/* LoadingSpinner.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #e6f7ff 100%); /* Unique gradient background */
+  padding: 16px;
+  font-family: sans-serif; /* Default English font */
+}
+
+.content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for uniqueness */
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow for modern look */
+}
+
+.spinner {
+  width: 64px; /* Larger spinner for better visibility */
+  height: 64px;
+  border: 6px solid #e5e7eb; /* Light gray border */
+  border-top: 6px solid #3b82f6; /* Blue top border */
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite; /* Smoother animation */
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: medium;
+  color: #374151; /* Dark gray text */
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    padding: 24px;
+  }
+
+  .spinner {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+  }
+
+  .text {
+    font-size: 0.875rem;
+  }
+}

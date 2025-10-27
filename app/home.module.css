@@ -1,0 +1,134 @@
+/* Home.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f0f9ff, #ffffff, #e6f7ff);
+  padding: 16px;
+  font-family: poppins, sans-serif;
+}
+
+.contentWrapper {
+  max-width: 1152px; /* Equivalent to max-w-4xl */
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem; /* Equivalent to text-5xl */
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.title span {
+  color: #ff3300; /* Custom highlight color */
+}
+
+.subtitle {
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  color: #666666;
+  margin-bottom: 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+  .buttonGroup {
+    flex-direction: row;
+  }
+}
+
+.primaryButton {
+  padding: 12px 24px;
+  background-color: #3b82f6; /* Custom primary color */
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.primaryButton:hover {
+  background-color: #2563eb;
+}
+
+.secondaryButton {
+  padding: 12px 24px;
+  background-color: #6b7280; /* Custom secondary color */
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.secondaryButton:hover {
+  background-color: #4b5563;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 64px;
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+  .cardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #3b82f6; /* Custom icon color */
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  font-size: 0.875rem;
+  color: #666666;
+}

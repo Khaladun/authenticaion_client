@@ -1,0 +1,176 @@
+/* LoginPage.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f0f9ff, #ffffff, #e6f7ff);
+  padding: 16px;
+  font-family: sans-serif; /* Default English font */
+}
+
+.formWrapper {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.errorMessage {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #fef2f2;
+  border-left: 4px solid #ef4444;
+  color: #dc2626;
+  border-radius: 8px;
+  font-weight: medium;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: medium;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.inputField {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 0.875rem;
+  transition: border-color 0.3s;
+}
+
+.inputField:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.checkboxGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.checkboxLabel {
+  margin-left: 8px;
+  font-size: 0.875rem;
+  color: #333333;
+}
+
+.forgotLink {
+  font-size: 0.875rem;
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgotLink:hover {
+  color: #2563eb;
+}
+
+.submitButton {
+  padding: 8px;
+  background-color: #3b82f6;
+  border-color: #0062ff;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #2563eb;
+}
+
+.submitButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.footerText {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.link {
+  color: #3b82f6;
+  font-weight: medium;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #2563eb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .formWrapper {
+    padding: 16px;
+  }
+
+  .inputField {
+    font-size: 0.875rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .checkboxGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

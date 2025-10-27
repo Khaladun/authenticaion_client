@@ -1,0 +1,185 @@
+/* VerifyOTPPage.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f0f9ff, #ffffff, #e6f7ff);
+  padding: 16px;
+  font-family: sans-serif; /* Default English font */
+}
+
+.formWrapper {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  background-color: #e0f2fe; /* Light blue background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: #3b82f6; /* Blue color */
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.email {
+  font-size: 0.875rem;
+  color: #3b82f6;
+  margin-top: 8px;
+}
+
+.errorMessage {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #fef2f2;
+  border-left: 4px solid #ef4444;
+  color: #dc2626;
+  border-radius: 4px;
+  font-weight: medium;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: medium;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.inputField {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.5rem; /* Larger for OTP */
+  text-align: center;
+  letter-spacing: 0.25em; /* Wide spacing */
+  transition: border-color 0.3s;
+}
+
+.inputField:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.submitButton {
+  padding: 8px;
+  background-color: #3b82f6;
+  border-color: #0062ff;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #2563eb;
+}
+
+.submitButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.footerText {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.resendButton {
+  color: #3b82f6;
+  font-weight: medium;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.resendButton:hover {
+  color: #2563eb;
+}
+
+.loadingContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .formWrapper {
+    padding: 16px;
+  }
+
+  .inputField {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+}

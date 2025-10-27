@@ -1,0 +1,189 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./app/verify-otp/verify.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/* VerifyOTPPage.module.css */
+
+.verify_container__EuPt1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f0f9ff, #ffffff, #e6f7ff);
+  padding: 16px;
+  font-family: sans-serif; /* Default English font */
+}
+
+.verify_formWrapper__rJYrH {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.verify_header__ppWT1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.verify_iconWrapper__hlsMP {
+  width: 64px;
+  height: 64px;
+  background-color: #e0f2fe; /* Light blue background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.verify_icon__US437 {
+  width: 32px;
+  height: 32px;
+  color: #3b82f6; /* Blue color */
+}
+
+.verify_title__HaL9m {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.verify_subtitle__pbGj5 {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.verify_email__wG1gV {
+  font-size: 0.875rem;
+  color: #3b82f6;
+  margin-top: 8px;
+}
+
+.verify_errorMessage__Yhlx7 {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #fef2f2;
+  border-left: 4px solid #ef4444;
+  color: #dc2626;
+  border-radius: 4px;
+  font-weight: medium;
+}
+
+.verify_form__RGYET {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.verify_inputGroup__B6XgE {
+  display: flex;
+  flex-direction: column;
+}
+
+.verify_label__nrTyx {
+  font-size: 0.875rem;
+  font-weight: medium;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.verify_inputField__T6VbB {
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.5rem; /* Larger for OTP */
+  text-align: center;
+  letter-spacing: 0.25em; /* Wide spacing */
+  transition: border-color 0.3s;
+}
+
+.verify_inputField__T6VbB:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.verify_submitButton__kPW3i {
+  padding: 8px;
+  background-color: #3b82f6;
+  border-color: #0062ff;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verify_submitButton__kPW3i:hover {
+  background-color: #2563eb;
+}
+
+.verify_submitButton__kPW3i:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.verify_footer__R8gJw {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.verify_footerText__4i4I8 {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.verify_resendButton__iM7B8 {
+  color: #3b82f6;
+  font-weight: medium;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.verify_resendButton__iM7B8:hover {
+  color: #2563eb;
+}
+
+.verify_loadingContainer__sVmDo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify_loadingSpinner__eYDQk {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: verify_spin__XbWEw 1s linear infinite;
+}
+
+@keyframes verify_spin__XbWEw {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .verify_formWrapper__rJYrH {
+    padding: 16px;
+  }
+
+  .verify_inputField__T6VbB {
+    font-size: 1.25rem;
+  }
+
+  .verify_title__HaL9m {
+    font-size: 1.25rem;
+  }
+}
+

@@ -1,0 +1,18 @@
+# Ignore all log files
+*.log
+
+# Ignore the 'build' directory
+build/
+
+# Ignore a specific file
+config.local.js
+
+# Ignore the 'node_modules' directory
+node_modules/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore all .tmp files except 'important.tmp'
+*.tmp
+!important.tmp
